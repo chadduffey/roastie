@@ -1,0 +1,7 @@
+C:\Users\chad\source\repos\roastie\roastie\bin\Debug\roastie.exe.config
+C:\Users\chad\source\repos\roastie\roastie\bin\Debug\roastie.exe
+C:\Users\chad\source\repos\roastie\roastie\bin\Debug\roastie.pdb
+C:\Users\chad\source\repos\roastie\roastie\obj\Debug\roastie.csprojAssemblyReference.cache
+C:\Users\chad\source\repos\roastie\roastie\obj\Debug\roastie.csproj.CoreCompileInputs.cache
+C:\Users\chad\source\repos\roastie\roastie\obj\Debug\roastie.exe
+C:\Users\chad\source\repos\roastie\roastie\obj\Debug\roastie.pdb
