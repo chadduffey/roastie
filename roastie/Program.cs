@@ -11,7 +11,9 @@ namespace roastie
     {
         static void Main(string[] args)
         {
-            List<string> SPNS = ListSPN();
+            List<string> SPNs = ListSPN();
+            DisplaySPNs(SPNs);
+            Console.ReadKey();
         }
 
         static List<string> ListSPN()
@@ -42,5 +44,16 @@ namespace roastie
 
             return SPNs;
         }
+
+        static void DisplaySPNs(List<string> SPNs)
+        {
+            int counter = 1;
+            foreach (string item in SPNs)
+            {
+                Console.WriteLine("{0}: {1}", counter, item);
+                counter++;
+            }
+        }
+
     }
 }
