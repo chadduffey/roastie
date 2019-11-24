@@ -13,7 +13,11 @@ namespace roastie
         {
             List<string> SPNs = ListSPN();
             DisplaySPNs(SPNs);
-            Console.ReadKey();
+            string choice;
+            do {
+                Console.Write("\n\nWould you like to roast a specific SPN [s] or all SPNs [a]? ([s or a] Default is specific [s] ): ");
+                choice = Console.ReadLine();
+            } while (choice != "a" && choice != "s");
         }
 
         static List<string> ListSPN()
