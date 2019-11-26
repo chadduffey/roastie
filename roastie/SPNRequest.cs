@@ -21,10 +21,10 @@ namespace roastie
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\t[#] Got it.");
             Console.ResetColor();
-            Console.WriteLine("\tSPN: {0}", t.ServicePrincipalName);
-            Console.WriteLine("\tValid From: {0}", t.ValidFrom);
-            Console.WriteLine("\tValid To: {0}", t.ValidTo);
-            Console.WriteLine("\tKey Size: {0}", t.SecurityKey.KeySize);
+            Console.WriteLine("\t[#] SPN: {0}", t.ServicePrincipalName);
+            Console.WriteLine("\t[#] Valid From: {0}", t.ValidFrom);
+            Console.WriteLine("\t[#] Valid To: {0}", t.ValidTo);
+            Console.WriteLine("\t[#] Key Size: {0}", t.SecurityKey.KeySize);
 
         }
         
