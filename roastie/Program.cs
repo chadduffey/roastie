@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.DirectoryServices;
+
+// this whole thing is because of the work here: https://github.com/nidem/kerberoast by Tim Medin. 
+// i'm just trying to learn some C# :) 
 
 namespace roastie
 {
@@ -13,15 +12,15 @@ namespace roastie
         static void Main(string[] args)
         {
             bool mode = Menus.MenuMain();
-
             List<string> SPNs = SPNSearch.GatherSPNs(mode);
-
             DisplaySPNs(SPNs);
-
             int target = Menus.MenuSPNtoRoast();
+
+            SPNRequest.RequestAuth();
+            Console.ReadKey();
+
         }
 
-        
 
         static void DisplaySPNs(List<string> SPNs)
         {
