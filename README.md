@@ -6,3 +6,5 @@ Not ready for release :)
 
 Trying to learn some C# by implementing a point and click kerberoasting client. 
 It's not done yet. When it is, i will remove this warning. 
+
+![roastie](roastie.png)

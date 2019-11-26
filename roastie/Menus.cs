@@ -6,8 +6,10 @@ namespace roastie
     {
         public static bool MenuMain()
         {
-            displayBanner();
-            Console.Write("\n\nShould we include computer account SPNs? [y/N]: ");
+            DisplayBanner();
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("\n\n[?] Should we include computer account SPNs? [y/N]: ");
+            Console.ResetColor();
             string choice = Console.ReadLine();
             if (choice == "y" || choice == "Y")
             {
@@ -15,13 +17,13 @@ namespace roastie
                 Console.WriteLine("[*] Searching for User and Computer SPN's: ");
                 return true;
             }
-            Console.Clear();
             Console.WriteLine("[*] Searching for User SPN's: ");
             return false;
         }
 
-        public static void displayBanner()
+        public static void DisplayBanner()
         {
+            Console.ForegroundColor = ConsoleColor.Red;
             string banner = @"
  _____                 _   _      
 |  __ \               | | (_)     
@@ -30,6 +32,7 @@ namespace roastie
 | | \ \ (_) | (_| \__ \ |_| |  __/
 |_|  \_\___/ \__,_|___/\__|_|\___|";
             Console.WriteLine(banner);
+            Console.ResetColor();
         }
 
         public static int MenuSPNtoRoast()
@@ -37,9 +40,10 @@ namespace roastie
             string choice;
             do
             {
-                Console.Write("\n\nWhich SPN should we fire up? ('0' for ALL): ");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("[?] Which SPN should we fire up? ('0' for ALL): ");
                 choice = Console.ReadLine();
-                Console.Clear();
+                Console.ResetColor();
             } while (choice != "a" && choice != "s");
             return 1;
         }

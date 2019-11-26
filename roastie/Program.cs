@@ -27,7 +27,7 @@ namespace roastie
             int counter = 1;
             foreach (string item in SPNs)
             {
-                Console.WriteLine("{0}: {1}", counter, item);
+                Console.WriteLine("\t[#] {0}: {1}", counter, item);
                 counter++;
             }
         }

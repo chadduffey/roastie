@@ -18,14 +18,13 @@ namespace roastie
 
         private static void DisplayTicket(System.IdentityModel.Tokens.KerberosRequestorSecurityToken t)
         {
-            Console.WriteLine("SPN: {0}", t.ServicePrincipalName);
-            Console.WriteLine("Valid From: {0}", t.ValidFrom);
-            Console.WriteLine("Valid To: {0}", t.ValidTo);
-            Console.WriteLine("Key Size: {0}", t.SecurityKey.KeySize);
-            Console.WriteLine("Key: {0}", t.SecurityKey.ToString());
-
-            //var allProps = t.GetType().GetProperties(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
-            //var allFields = t.GetType().GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\t[#] Got it.");
+            Console.ResetColor();
+            Console.WriteLine("\tSPN: {0}", t.ServicePrincipalName);
+            Console.WriteLine("\tValid From: {0}", t.ValidFrom);
+            Console.WriteLine("\tValid To: {0}", t.ValidTo);
+            Console.WriteLine("\tKey Size: {0}", t.SecurityKey.KeySize);
 
         }
         
