@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="SharpsploitThings.cs" />
+    <Compile Include="SPN.cs" />
     <Compile Include="SPNRequest.cs" />
     <Compile Include="SPNSearch.cs" />
     <Compile Include="Menus.cs" />

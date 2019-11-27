@@ -15,8 +15,9 @@ namespace roastie
             List<string> SPNs = SPNSearch.GatherSPNs(mode);
             int SPNCount = Menus.DisplaySPNs(SPNs);    
             int target = Menus.MenuSPNtoRoast(SPNCount);
-            SPNRequest.RequestAuth(SPNs[target -1]);
-            TicketExport.ExportTickets();
+            SPN spn = new SPN(SPNs[target - 1]);
+            SPNRequest.RequestAuth(spn.fullSPN);
+            TicketExport.ExportTickets(spn);
             Console.ReadKey();
 
         }        
