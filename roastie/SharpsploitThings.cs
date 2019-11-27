@@ -4,7 +4,7 @@ using SharpSploit.Credentials;
 
 namespace roastie
 {
-    class SharpsploitThings
+    class TicketExport
     {
 
         public static void ExportTickets()

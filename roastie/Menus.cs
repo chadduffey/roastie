@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace roastie
 {
@@ -35,17 +36,30 @@ namespace roastie
             Console.ResetColor();
         }
 
-        public static int MenuSPNtoRoast()
+        public static int MenuSPNtoRoast(int max_spn)
         {
-            string choice;
+            string str_choice;
+            int int_choice;
             do
             {
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("[?] Which SPN should we fire up? ('0' for ALL): ");
-                choice = Console.ReadLine();
+                str_choice = Console.ReadLine();
                 Console.ResetColor();
-            } while (choice != "a" && choice != "s");
-            return 1;
+            } while ((!int.TryParse(str_choice, out int_choice)) || (int_choice < 0) || (int_choice > max_spn));
+
+            return int_choice;
+        }
+
+        public static int DisplaySPNs(List<string> SPNs)
+        {
+            int counter = 1;
+            foreach (string item in SPNs)
+            {
+                Console.WriteLine("\t[#] {0}: {1}", counter, item);
+                counter++;
+            }
+            return counter -1;
         }
 
 

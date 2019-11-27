@@ -13,29 +13,13 @@ namespace roastie
         {
             bool mode = Menus.MenuMain();
             List<string> SPNs = SPNSearch.GatherSPNs(mode);
-            DisplaySPNs(SPNs);
-            int target = Menus.MenuSPNtoRoast();
-
-            SPNRequest.RequestAuth();
-
-            SharpsploitThings.ExportTickets();
-
+            int SPNCount = Menus.DisplaySPNs(SPNs);    
+            int target = Menus.MenuSPNtoRoast(SPNCount);
+            SPNRequest.RequestAuth(SPNs[target -1]);
+            TicketExport.ExportTickets();
             Console.ReadKey();
 
-        }
-
-
-        static void DisplaySPNs(List<string> SPNs)
-        {
-            int counter = 1;
-            foreach (string item in SPNs)
-            {
-                Console.WriteLine("\t[#] {0}: {1}", counter, item);
-                counter++;
-            }
-        }
-
-        
+        }        
 
     }
 }

@@ -6,11 +6,11 @@ namespace roastie
 {
     class SPNRequest
     {
-        public static void RequestAuth()
+        public static void RequestAuth(string target)
         {
             System.IdentityModel.Tokens.KerberosRequestorSecurityToken ticket =
                 new System.IdentityModel.Tokens.KerberosRequestorSecurityToken
-                ("MSSQLSVC/exchange.chadduffey.com", TokenImpersonationLevel.Impersonation, null, Guid.NewGuid().ToString());
+                (target, TokenImpersonationLevel.Impersonation, null, Guid.NewGuid().ToString());
 
             DisplayTicket(ticket);
 
