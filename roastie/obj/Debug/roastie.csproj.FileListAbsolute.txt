@@ -12,3 +12,4 @@ C:\Users\chad.CHADDUFFEY\Code\roastie\roastie\obj\Debug\roastie.csprojAssemblyRe
 C:\Users\chad.CHADDUFFEY\Code\roastie\roastie\obj\Debug\roastie.csproj.CoreCompileInputs.cache
 C:\Users\chad.CHADDUFFEY\Code\roastie\roastie\obj\Debug\roastie.exe
 C:\Users\chad.CHADDUFFEY\Code\roastie\roastie\obj\Debug\roastie.pdb
+C:\Users\chad.CHADDUFFEY\Code\roastie\roastie\obj\Debug\roastie.csproj.Fody.CopyLocal.cache

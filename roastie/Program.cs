@@ -17,6 +17,9 @@ namespace roastie
             int target = Menus.MenuSPNtoRoast();
 
             SPNRequest.RequestAuth();
+
+            SharpsploitThings.ExportTickets();
+
             Console.ReadKey();
 
         }
