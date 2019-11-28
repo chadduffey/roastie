@@ -4,11 +4,10 @@ Not ready for release :)
 
 ## Getting Started
 
-Trying to learn some C# by implementing a point and click kerberoasting client. 
-It's not done yet. When it is, i will remove this warning. 
+Spending time on C# by attempting to build a point and click kerberoasting app, following the steps here: https://github.com/nidem/kerberoast. 
 
-Urgh, just learned that Rubeus already had a module for this. :(
-My goodness harmj0y is a proper talented bugger. 
-Nevermind, still gonna finish this thing out. 
+It's not done yet. Please don't use it for anything important.
+
+You should be using Rubeus: https://github.com/GhostPack/Rubeus 
 
 ![roastie](roastie.PNG)
